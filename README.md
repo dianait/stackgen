@@ -17,7 +17,7 @@ Todavía está en proceso. Así que no me hago responsable si se acaba añadiend
 
 ![next, angular, ts, js, html, css, linux, chrome, notion, gitkraken, honor, msi, bose, dolce gusto](./public/stack/stack.png)
 
-La versión beta tiene estos iconos. Pero iremos aumentando para que todos tengan cabida. !No desespereis Backenders, 💪!
+La versión beta tiene estos iconos. Pero iremos aumentando para que todos tengan cabida. ¡No desespereis Backenders, 💪!
 
 #### 📈 Posibles mejoras
 
