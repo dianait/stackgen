@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/header";
 import Stack from "./components/stack";
 import { useStack } from "./hooks/useStack";
+import html2canvas from "html2canvas";
 
 export default function App() {
   const [keyword, setKeyword] = useState([]);
@@ -30,9 +31,15 @@ export default function App() {
     setInput("");
   };
 
+  const handleOnClick = () => {
+    html2canvas(document.querySelector(".stack")).then((canvas) => {
+      document.body.appendChild(canvas);
+    });
+  };
+
   return (
     <div className="App">
-      <Header title="stackGen.io" />
+      <Header title="stackGen" />
       <form onSubmit={handleSubmit} style={{ backgroundColor: "#282c34" }}>
         <input
           type="text"
@@ -46,7 +53,9 @@ export default function App() {
         <br />
         <br />
       </form>
-      <Stack stack={stack} />
+      <button onClick={handleOnClick}>Generate!</button>
+
+      <Stack className="stack" stack={stack} />
     </div>
   );
 }
