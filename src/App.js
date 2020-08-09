@@ -7,15 +7,14 @@ import { useStack } from "./hooks/useStack";
 export default function App() {
   const [keyword, setKeyword] = useState([]);
   const [input, setInput] = useState();
-  const [message, setMesasge] = useState();
-  const { stack } = useStack({ keyword });
+  const [message, setMessage] = useState();
 
   useEffect(() => {
     setInput("");
   }, [stack]);
 
   const handleChange = (evt) => {
-    setMesasge("");
+    setMessage("");
     setInput(evt.target.value);
     setKeyword(evt.target.value);
   };
@@ -26,7 +25,7 @@ export default function App() {
       ? "Este icono ya lo tienes"
       : "Icono no disponible";
 
-    setMesasge(msg);
+    setMessage(msg);
     setInput("");
   };
 
