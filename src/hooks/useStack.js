@@ -9,7 +9,7 @@ export function useStack({ keyword }) {
 
     // Si tenemos imagen y si no está ya en eñ stack del usuario
     if (defaultStack.includes(url) && !stack.includes(url)) {
-      stack[stack.length] = url;
+      stack.push(url);
       console.log(`stack updated con ${keyword}`, stack);
       setStack(stack);
     }
