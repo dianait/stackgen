@@ -10,7 +10,7 @@ La idea es que puedes descargarte los iconos de las tecnologías que te definen,
 Este proyecto forma parte de mi toma de contacto inicial con **React**.
 El curso de [midudev](https://midu.dev/curso-gratis-react-2020/) han sido la inspiración y el empujón necesario para ponerme en serio con esta librería. Es un curso imprescindible si quieres aprender React. Lo recomiendo 100%.
 
-####⚠️ **Aviso para navegantes**
+#### ⚠️ **Aviso para navegantes**
 Todavía está en proceso. Así que no me hago responsable si se acaba añadiendo Fortran a tu stack sin venir a cuento.
 
 #### 🍦 Iconos
