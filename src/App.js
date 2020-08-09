@@ -13,20 +13,23 @@ export default function App() {
     evt.preventDefault();
     const tech = document.getElementsByTagName("input")[0].value;
     setKeyword(tech);
+    setKeyword("");
   };
-  /*   const handleChange = (evt) => {
+
+  const handleChange = (evt) => {
     setKeyword(evt.target.value);
   };
- */
+
   return (
     <div className="App">
       <Header title="stackGen.io" />
       <form onSubmit={handleSubmit} style={{ backgroundColor: "#282c34" }}>
         <input
-          /*           onChange={handleChange} */
           type="text"
           name="keyword"
           placeholder="🔎 Buscar..."
+          onChange={handleChange}
+          value={keyword}
         />
         <br />
         <br />
