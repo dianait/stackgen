@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/header";
 import Stack from "./components/stack";
@@ -6,18 +6,28 @@ import { useStack } from "./hooks/useStack";
 
 export default function App() {
   const [keyword, setKeyword] = useState([]);
-
   const { stack } = useStack({ keyword });
+  const [input, setInput] = useState();
+  const [message, setMesasge] = useState();
+
+  useEffect(() => {
+    setInput("");
+  }, [stack]);
+
+  const handleChange = (evt) => {
+    setMesasge("");
+    setInput(evt.target.value);
+    setKeyword(evt.target.value);
+  };
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    const tech = document.getElementsByTagName("input")[0].value;
-    setKeyword(tech);
-    setKeyword("");
-  };
+    const msg = stack.includes(`${keyword}.png`)
+      ? "Este icono ya lo tienes"
+      : "Icono no disponible";
 
-  const handleChange = (evt) => {
-    setKeyword(evt.target.value);
+    setMesasge(msg);
+    setInput("");
   };
 
   return (
@@ -29,10 +39,10 @@ export default function App() {
           name="keyword"
           placeholder="🔎 Buscar..."
           onChange={handleChange}
-          value={keyword}
+          value={input}
+          autocomplete="off"
         />
-        <br />
-        <br />
+        <p>{message}</p>
         <br />
         <br />
       </form>
