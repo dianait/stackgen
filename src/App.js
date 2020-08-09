@@ -8,6 +8,7 @@ export default function App() {
   const [keyword, setKeyword] = useState([]);
   const [input, setInput] = useState();
   const [message, setMessage] = useState();
+  const { stack } = useStack({ keyword });
 
   useEffect(() => {
     setInput("");
