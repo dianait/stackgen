@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export function useStack({ keyword }) {
-  const [stack, setStack] = useState(["angular.png", "js.png"]);
+  const [stack, setStack] = useState([]);
 
   useEffect(() => {
     const url = `${keyword}.png`;

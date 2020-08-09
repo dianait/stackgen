@@ -6,9 +6,9 @@ import { useStack } from "./hooks/useStack";
 
 export default function App() {
   const [keyword, setKeyword] = useState([]);
-  const { stack } = useStack({ keyword });
   const [input, setInput] = useState();
   const [message, setMesasge] = useState();
+  const { stack } = useStack({ keyword });
 
   useEffect(() => {
     setInput("");
