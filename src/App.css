@@ -54,3 +54,7 @@ button:focus,
 button:active {
   outline: 0;
 }
+
+img.icon {
+  padding: 0.4rem;
+}

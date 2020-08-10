@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import defaultStackComplete from "../data/index";
+import { defaultStackSVG } from "../data/index";
 
 export function useStack({ keyword }) {
   const [stack, setStack] = useState([]);
   useEffect(() => {
-    const defaultStack = defaultStackComplete();
-    const icon = `${keyword}.png`;
+    const defaultStack = defaultStackSVG;
+    const icon = `${keyword}.svg`;
 
     if (defaultStack.includes(icon) && !stack.includes(icon)) {
       setStack((prevStack) => prevStack.concat([icon]));

@@ -5,7 +5,7 @@ export default function Tech({ id, tech }) {
     <img
       className="icon"
       key={id}
-      src={`./stack/${tech}`}
+      src={`./stack/v1.1/${tech}`}
       alt={tech.replace(".png", "")}
       width="49px"
       height="49px"
