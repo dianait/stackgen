@@ -5,7 +5,6 @@ import Stack from "./components/stack";
 import { useStack } from "./hooks/useStack";
 import html2canvas from "html2canvas";
 import Modal from "./components/modal";
-import modal from "./components/modal";
 
 export default function App() {
   // STATES
@@ -14,7 +13,7 @@ export default function App() {
   const [modal, setModal] = useState(false);
 
   // HOOKS
-  const { stack } = useStack({ keyword });
+  const { stack, msg } = useStack({ keyword });
 
   // REFS
   const inputRef = useRef();
@@ -33,12 +32,9 @@ export default function App() {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    const msg = stack.includes(`${keyword}.png`)
-      ? "Este icono ya lo tienes"
-      : "Icono no disponible";
-
     setMessage(msg);
     inputRef.current.value = "";
+    console.log(msg);
   };
 
   const handleOnClick = (evt) => {

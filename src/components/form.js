@@ -1,22 +1,17 @@
 import React from "react";
-import updateStack from "../services/udpdateStack";
 
 export default function Form() {
   return (
-    <form>
+    <form onSubmit={handleSubmit} style={{ backgroundColor: "#282c34" }}>
       <input
-        type="serch"
-        list="stackList"
+        ref={inputRef}
+        type="text"
+        name="keyword"
         placeholder="🔎 Buscar..."
-        onKeyPress={(event) => {
-          if (event.key === "Enter") {
-            const url = `${event.target.value}.png`;
-            updateStack(url);
-          }
-        }}
+        onChange={handleChange}
+        autoComplete="off"
       />
-      <br />
-      <br />
+      <p className="msg">{message}</p>
       <br />
       <br />
     </form>
@@ -24,13 +19,3 @@ export default function Form() {
 }
 
 //rfc
-
-/*
-    onKeyPress={(event) => {
-          if (event.key === "Enter") {
-            const tech = event.target.value;
-            let src = `${tech}.png`;
-            setStack(() => stack.push(src));
-          }
-        }}
-*/

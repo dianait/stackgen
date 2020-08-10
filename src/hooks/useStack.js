@@ -1,39 +1,21 @@
 import { useState, useEffect } from "react";
+import defaultStackComplete from "../data/index";
 
 export function useStack({ keyword }) {
   const [stack, setStack] = useState([]);
 
   useEffect(() => {
-    const url = `${keyword}.png`;
     const defaultStack = defaultStackComplete();
+    const url = `${keyword}.png`;
 
-    // Si tenemos imagen y si no está ya en eñ stack del usuario
     if (defaultStack.includes(url) && !stack.includes(url)) {
       setStack((prevStack) => prevStack.concat([url]));
     }
   }, [stack, keyword]);
 
-  return { stack };
-}
+  const msg = stack.includes(`${keyword}.png`)
+    ? "Este icono ya lo tienes"
+    : "Icono no disponible";
 
-export function defaultStackComplete() {
-  return [
-    "apple.png",
-    "bose.png",
-    "chrome.png",
-    "css.png",
-    "gitkraken.png",
-    "dolce.png",
-    "html.png",
-    "msi.png",
-    "linux.png",
-    "notion.png",
-    "vsc.png",
-    "js.png",
-    "ts.png",
-    "next.png",
-    "honor.png",
-    "node.png",
-    "angular.png",
-  ];
+  return { stack, msg };
 }
