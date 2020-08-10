@@ -19,6 +19,7 @@ La versión beta tiene estos iconos. Pero iremos aumentando para que todos tenga
 
 - Test añadidos
 - Nuevos iconos en svg
+
   ![next, angular, ts, js, html, css, linux, chrome, notion, gitkraken, honor, msi, bose, dolce gusto](https://github.com/DianaIT/stackgen/blob/master/public/readme/stackV1-1.PNG)
 
 #### 🖐 Contribuciones
