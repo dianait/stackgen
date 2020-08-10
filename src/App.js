@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import Header from "./components/header";
 import Stack from "./components/stack";
@@ -7,17 +7,17 @@ import html2canvas from "html2canvas";
 
 export default function App() {
   const [keyword, setKeyword] = useState([]);
-  const [input, setInput] = useState();
+  const inputRef = useRef();
   const [message, setMessage] = useState();
   const { stack } = useStack({ keyword });
 
   useEffect(() => {
-    setInput("");
+    inputRef.current.value = "";
   }, [stack]);
 
   const handleChange = (evt) => {
     setMessage("");
-    setInput(evt.target.value);
+    inputRef.current.value = evt.target.value;
     setKeyword(evt.target.value);
   };
 
@@ -28,7 +28,7 @@ export default function App() {
       : "Icono no disponible";
 
     setMessage(msg);
-    setInput("");
+    inputRef.current.value = "";
   };
 
   const handleOnClick = () => {
@@ -42,14 +42,14 @@ export default function App() {
       <Header title="stackGen" />
       <form onSubmit={handleSubmit} style={{ backgroundColor: "#282c34" }}>
         <input
+          ref={inputRef}
           type="text"
           name="keyword"
           placeholder="🔎 Buscar..."
           onChange={handleChange}
-          value={input}
-          autocomplete="off"
+          autoComplete="off"
         />
-        <p>{message}</p>
+        <p className="msg">{message}</p>
         <br />
         <br />
       </form>

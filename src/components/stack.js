@@ -3,7 +3,6 @@ import Tech from "./tech";
 
 export default function Stack({ stack }) {
   let id = 0;
-  console.log("stack length", stack.length);
 
   return (
     <section className="stack">
