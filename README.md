@@ -25,6 +25,6 @@ La versión beta tiene estos iconos. Pero iremos aumentando para que todos tenga
 - [ ] Poder añadir más de una tecnología a la vez
 - [ ] Poder subir nuevos iconos
 - [ ] Mostrar los iconos y seleccionarlos desde ahí
-      [ ] Generar código HTML con los iconos
+- [ ] Generar código HTML con los iconos
 
 Hecho con ❤️ por [Dianait](https://github.com/dianait)
