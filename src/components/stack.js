@@ -6,7 +6,7 @@ export default function Stack({ stack }) {
 
   return (
     <section className="stack">
-      <h2>My Stack</h2>
+      <h3>My Stack</h3>
       {stack.map((tech) => (
         <Tech key={id++} id={id++} tech={tech} />
       ))}
