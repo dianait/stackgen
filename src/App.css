@@ -26,12 +26,14 @@ img.logo {
 }
 
 section.stack {
-  border-bottom: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-  max-width: 500px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 700px;
+  width: 450px;
+  min-width: 200px;
   margin: 1rem auto;
   padding-bottom: 1.5rem;
-  border-radius: 10px;
   min-height: 98px;
 }
 
@@ -56,5 +58,12 @@ button:active {
 }
 
 img.icon {
-  padding: 0.4rem;
+  width: fit-content;
+  width: 49px;
+  padding: 1rem;
+}
+
+div.imgContainer {
+  width: 100px;
+  height: 100px;
 }
