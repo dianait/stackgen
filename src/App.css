@@ -1,15 +1,25 @@
 .App {
   text-align: center;
-  width: 90%;
   margin: 0 auto;
 }
 
 .App-header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
+  margin: 1rem 0;
   border-bottom: 2px solid lightseagreen;
+  height: 40px;
+}
+
+.App-header div {
+  display: flex;
+  width: 500px;
+}
+
+.App-header div img {
+  width: 50px;
 }
 
 input {
@@ -66,4 +76,16 @@ img.icon {
 div.imgContainer {
   width: 100px;
   height: 100px;
+}
+
+/* footer {
+  position: fixed;
+  bottom: 0;
+} */
+
+footer img {
+  width: 29px;
+  height: 29px;
+  padding: 0 0.3rem;
+  float: right;
 }
