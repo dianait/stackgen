@@ -5,7 +5,8 @@ export function useStack({ keyword }) {
   const [stack, setStack] = useState([]);
   useEffect(() => {
     const defaultStack = defaultStackSVG;
-    const icon = `${keyword}.svg`;
+    const iconRaw = `${keyword}.svg`;
+    const icon = iconRaw.toLowerCase();
 
     if (defaultStack.includes(icon) && !stack.includes(icon)) {
       setStack((prevStack) => prevStack.concat([icon]));

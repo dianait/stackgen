@@ -1,24 +1,27 @@
 # ✨ StackGen
 
-#### ❓ Qué
-
 **StackGen** es un generador de stack tecnológico, bueno, en ocasiones, no tan tecnólogico 😜 Aunque la cafetera yo ya la cuento como stack también.
-La idea es que puedes descargarte uma imagen con los iconos de las tecnologías que te definen para poder incluirlas en tu web, curriculum, perfil de github... ¡Dónde quieras!
-
-#### 🔨 Con qué
-
-Este proyecto forma parte de mi toma de contacto inicial con **React**.
-El curso de [midudev](https://midu.dev/curso-gratis-react-2020/) han sido la inspiración y el empujón necesario para ponerme en serio con esta librería. Es un curso imprescindible si quieres aprender React. Lo recomiendo 100%.
+La idea es que puedes descargarte uma imagen con los iconos de las tecnologías que utlices para poder incluirlas en tu web, curriculum, perfil de github... ¡Dónde quieras!
 
 #### ⚠️ **Aviso para navegantes**
 
 Todavía está en proceso. Así que no me hago responsable si se acaba añadiendo Fortran a tu stack sin venir a cuento.
 
-#### 🍦 Iconos
+#### 🍦 Iconos Versión 1.0
 
 ![next, angular, ts, js, html, css, linux, chrome, notion, gitkraken, honor, msi, bose, dolce gusto](./public/stack/stack.png)
 
 La versión beta tiene estos iconos. Pero iremos aumentando para que todos tengan cabida. ¡No desespereis Backenders, 💪!
+
+#### ✳️ Versión 1.1
+
+- Test añadidos
+- Nuevos iconos en svg
+  ![next, angular, ts, js, html, css, linux, chrome, notion, gitkraken, honor, msi, bose, dolce gusto](./public/readme/stackv1-1.png)
+
+#### 🖐 Contribuciones
+
+¿Quieres añadir más iconos? Haz PR y añádelos. Cualquier contribuación es más que bienvenida.
 
 #### 📈 Posibles mejoras
 
@@ -27,4 +30,17 @@ La versión beta tiene estos iconos. Pero iremos aumentando para que todos tenga
 - [ ] Mostrar los iconos y seleccionarlos desde ahí
 - [ ] Generar código HTML con los iconos
 
-Hecho con ❤️ por [Dianait](https://github.com/dianait)
+#### 📚 Sources
+
+- [Iconos SVG](https://worldvectorlogo.com/)
+- [Curso de React desde cero](https://midu.dev/curso-gratis-react-2020/) de [midudev](https://github.com/midudev)
+
+---
+
+<p align="center"><a href="https://twitter.com/dianait_"><img src="./social/../public/social/twitter.svg" alt="dianait_" width="25"/></a>
+<a href="https://www.linkedin.com/in/dianahernandezsoler/"><img src="./social/../public/social/linkedin.svg" alt="dianahernandezsoler" width="25"/></a>
+<a href="https://www.instagram.com/dianait_"><img src="./social/../public/social/instagram.svg" alt="dianait" width="25"/></a>
+<a href="https://dianait.vercel.app"><img src="./public/social/SFlogo.PNG" alt="series & Front" width="28"/></a>
+
+<p align="center"> 💻 con ❤️ por Dianait</p>
+</p>

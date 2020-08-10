@@ -3,11 +3,21 @@ import React from "react";
 export default function Footer() {
   return (
     <footer>
-      <img src="./social/github.svg" alt="github" />
-      <img src="./social/instagram.svg" alt="instagram" />
-      <img src="./social/linkedin.svg" alt="linkedin" />
-      <img src="./social/spotify.svg" alt="spotify" />
-      <img src="./social/twitter.svg" alt="twitter" />
+      <a href="https://github.com/DianaIT">
+        <img src="./social/github.svg" alt="dianait" />
+      </a>
+      <a href="https://www.instagram.com/dianait_">
+        <img src="./social/instagram.svg" alt="dianait_" />
+      </a>
+      <a href="https://www.linkedin.com/in/dianahernandezsoler/">
+        <img src="./social/linkedin.svg" alt="dianahernandezsoler" />
+      </a>
+      <a href="https://twitter.com/dianait_">
+        <img src="./social/twitter.svg" alt="diana_" />
+      </a>
+      <a href="https://dianait.vercel.app">
+        <img src="./social/SFlogo.PNG" alt="Series & Front" />
+      </a>
     </footer>
   );
 }

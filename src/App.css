@@ -29,10 +29,9 @@ input {
 }
 
 img.logo {
-  width: 30px;
+  width: 100px;
   margin: 1rem;
   border-radius: 99999px;
-  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3);
 }
 
 section.stack {
@@ -40,8 +39,7 @@ section.stack {
   align-items: center;
   flex-wrap: wrap;
   max-width: 700px;
-  width: 450px;
-  min-width: 200px;
+  min-width: 400px;
   margin: 1rem auto;
   padding-bottom: 1.5rem;
   min-height: 98px;
@@ -78,10 +76,13 @@ div.imgContainer {
   height: 100px;
 }
 
-/* footer {
+footer {
   position: fixed;
-  bottom: 0;
-} */
+  bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid lightseagreen;
+  width: 100%;
+}
 
 footer img {
   width: 29px;
