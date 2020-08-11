@@ -4,7 +4,10 @@ export default function Header({ title }) {
   return (
     <header className="App-header">
       <div>
-        <h1> 🧱 {title}</h1>
+        <h1>
+          {" "}
+          <a href="/">🧱</a> {title}
+        </h1>
       </div>
     </header>
   );

@@ -31,10 +31,13 @@ section.stack {
   align-items: center;
   flex-wrap: wrap;
   max-width: 700px;
-  min-width: 400px;
+  width: 540px;
+  min-width: 300px;
   margin: 1rem auto;
-  padding-bottom: 1.5rem;
-  min-height: 98px;
+  padding: 1rem;
+  min-height: 135px;
+  border: 1px solid lightblue;
+  border-radius: 10px;
 }
 
 h1 {
@@ -68,10 +71,11 @@ div.imgContainer {
 }
 
 footer {
-  position: fixed;
-  bottom: 1rem;
+  /*   position: fixed;
+  bottom: 1rem; */
   padding-top: 1rem;
-  border-top: 2px solid lightseagreen;
+  padding-right: 1.5rem;
+  /*   border-top: 2px solid lightseagreen; */
   width: 100%;
 }
 
@@ -89,4 +93,8 @@ form {
 button.imageStack {
   display: none;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
 }

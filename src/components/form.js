@@ -28,7 +28,14 @@ export default function Form({ onSubmit: handlerSumitFromParent }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <p className="onBoard"> 👋 Busca tu primer icono... </p>
+      <p className="onBoard">
+        {" "}
+        👋 Busca tu primer icono
+        <br />
+        <span style={{ "font-size": ".9rem", "font-style": "italic" }}>
+          js, ts, react, html, css, vue, nespresso, sass...
+        </span>
+      </p>
       <input
         ref={inputRef}
         type="text"
