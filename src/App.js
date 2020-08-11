@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Header title="stackGen" />
+      <Header title="Stack generator" />
       <Form onSubmit={onSubmit} />
       <Stack className="stack" stack={stack} />
       <ImageStack />

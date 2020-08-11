@@ -65,3 +65,9 @@ export const defaultStackSVG = [
   "boostrap.svg",
   "archlinux.svg",
 ];
+
+// TODO: Iconos que se renderizan mál al pasar a Img
+/*
+Gatsby
+Vue
+*/

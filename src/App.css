@@ -1,37 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
-  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Staatliches", cursive;
+  letter-spacing: 7px;
 }
 
 .App-header {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  align-items: center;
-  margin: 1rem 0;
+  padding: 1rem 2rem 1.2rem 2rem;
   border-bottom: 2px solid lightseagreen;
-  height: 40px;
-}
-
-.App-header div {
-  display: flex;
-  width: 500px;
-}
-
-.App-header div img {
-  width: 50px;
 }
 
 input {
   padding: 0.6rem 1rem;
   margin: 1rem;
   border-radius: 15px;
-}
-
-img.logo {
-  width: 100px;
-  margin: 1rem;
-  border-radius: 99999px;
 }
 
 section.stack {
@@ -68,7 +60,6 @@ button:active {
 img.icon {
   width: fit-content;
   width: 49px;
-  padding: 1rem;
 }
 
 div.imgContainer {
@@ -89,4 +80,13 @@ footer img {
   height: 29px;
   padding: 0 0.3rem;
   float: right;
+}
+
+form {
+  margin: 5rem 0;
+}
+
+button.imageStack {
+  display: none;
+  margin: 0 auto;
 }

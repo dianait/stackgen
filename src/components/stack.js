@@ -6,7 +6,7 @@ export default function Stack({ stack }) {
 
   return (
     <>
-      <h3>My Stack</h3>
+      <p className="onBoard">...aquí aparecerán los iconos 👇 </p>
       <section className="stack">
         {stack.map((tech) => (
           <Tech key={id++} id={id++} tech={tech} />

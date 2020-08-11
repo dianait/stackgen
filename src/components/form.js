@@ -28,6 +28,7 @@ export default function Form({ onSubmit: handlerSumitFromParent }) {
 
   return (
     <form onSubmit={handleSubmit}>
+      <p className="onBoard"> 👋 Busca tu primer icono... </p>
       <input
         ref={inputRef}
         type="text"

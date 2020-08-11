@@ -22,16 +22,32 @@ export default function ImageStack() {
     const buttonElement = document.getElementsByTagName("button")[0];
     buttonElement.style.display = "none";
 
+    const onBardText = document.getElementsByClassName("onBoard");
+    for (let i = 0; i < onBardText.length; i++) {
+      onBardText[i].style.display = "none";
+    }
+
+    const resetButton = document.getElementsByClassName("imageStack")[0];
+    resetButton.style.display = "block";
+
     setMessage(
-      "🎉 Ya tienes listo tu stack, ahora solo tienes que guardar esta imagen y listo 👌"
+      "Ya tienes listo tu stack, ahora solo tienes que guardar esta imagen y listo 👇"
     );
+  };
+
+  const resetStackGen = () => {
+    window.location.reload(true);
   };
 
   return (
     <>
+      <span className="onBoard">...y cuando estés listo 👉 </span>
       <button onClick={generateImageStack}>Generate!</button>
-      <p>{message}</p>
+      <p style={{ marginBottom: "2rem" }}>{message}</p>
       <Modal show={modal} />
+      <button className="imageStack" onClick={resetStackGen}>
+        RESET
+      </button>
     </>
   );
 }
