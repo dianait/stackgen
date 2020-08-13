@@ -5,7 +5,6 @@ export default function Header({ title }) {
     <header className="App-header">
       <div>
         <h1>
-          {" "}
           <a href="/">🧱</a> {title}
         </h1>
       </div>

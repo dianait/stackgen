@@ -4,7 +4,7 @@ import App from "../App";
 
 test("home displayed as expexted", async () => {
   const { findByText } = render(<App />);
-  const title = await findByText(/stackGen/i);
+  const title = await findByText(/Stack generator/i);
   const input = await screen.findByRole("textbox");
   expect(input).toBeInTheDocument();
   expect(title).toBeInTheDocument();

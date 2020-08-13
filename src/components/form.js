@@ -32,7 +32,7 @@ export default function Form({ onSubmit: handlerSumitFromParent }) {
         {" "}
         👋 Busca tu primer icono
         <br />
-        <span style={{ "font-size": ".9rem", "font-style": "italic" }}>
+        <span style={{ fontSize: ".9rem", fontStyle: "italic" }}>
           js, ts, react, html, css, vue, nespresso, sass...
         </span>
       </p>
