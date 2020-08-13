@@ -15,7 +15,6 @@ export default function Form({ onSubmit: handlerSumitFromParent }) {
 
   const handleSubmit = (evt) => {
     evt.preventDefault()
-    setKeyword(evt.target.value)
     inputRef.current.value = ""
     handlerSumitFromParent(stack)
   }
@@ -23,7 +22,7 @@ export default function Form({ onSubmit: handlerSumitFromParent }) {
   // HANDLES
   const handleChange = (evt) => {
     inputRef.current.value = evt.target.value
-    setKeyword(evt.target.value)
+    setKeyword(inputRef.current.value)
   }
 
   return (
@@ -48,4 +47,4 @@ export default function Form({ onSubmit: handlerSumitFromParent }) {
   )
 }
 
-//rfc
+// rfc

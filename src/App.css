@@ -11,7 +11,7 @@
 }
 
 h1 {
-  font-family: "Staatliches", cursive;
+  font-family: "Staatliches", Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 7px;
 }
 
@@ -36,7 +36,6 @@ section.stack {
   margin: 1rem auto;
   padding: 1rem;
   min-height: 135px;
-  border: 1px solid lightblue;
   border-radius: 10px;
 }
 
@@ -62,12 +61,13 @@ button:active {
 
 img.icon {
   width: fit-content;
-  width: 49px;
+  width: 69px;
+  height: 69px;
 }
 
 div.imgContainer {
   width: 100px;
-  height: 100px;
+  height: 71px;
 }
 
 footer {
