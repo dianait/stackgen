@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export default function Header({ title }) {
   return (
@@ -9,7 +9,7 @@ export default function Header({ title }) {
         </h1>
       </div>
     </header>
-  );
+  )
 }
 
 //rfc

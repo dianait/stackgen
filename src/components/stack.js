@@ -1,8 +1,8 @@
-import React from "react";
-import Tech from "./tech";
+import React from "react"
+import Tech from "./tech"
 
 export default function Stack({ stack }) {
-  let id = 0;
+  let id = 0
 
   return (
     <>
@@ -13,7 +13,7 @@ export default function Stack({ stack }) {
         ))}
       </section>
     </>
-  );
+  )
 }
 
 //rfc

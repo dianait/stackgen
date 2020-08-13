@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export default function Tech({ id, tech }) {
   return (
@@ -10,7 +10,7 @@ export default function Tech({ id, tech }) {
         alt={tech.replace(".svg", "")}
       />
     </div>
-  );
+  )
 }
 
 //rfc

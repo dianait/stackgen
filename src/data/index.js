@@ -17,7 +17,7 @@ export default function defaultStackComplete() {
     "honor.png",
     "node.png",
     "angular.png",
-  ];
+  ]
 }
 
 export const defaultStackSVG = [
@@ -64,7 +64,7 @@ export const defaultStackSVG = [
   "aws.svg",
   "boostrap.svg",
   "archlinux.svg",
-];
+]
 
 // TODO: Iconos que se renderizan mál al pasar a Img
 /*

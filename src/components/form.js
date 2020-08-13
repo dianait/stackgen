@@ -1,30 +1,30 @@
-import React, { useState, useRef } from "react";
-import { useStack } from "../hooks/useStack";
+import React, { useState, useRef } from "react"
+import { useStack } from "../hooks/useStack"
 
 export default function Form({ onSubmit: handlerSumitFromParent }) {
   // STATES
-  const [keyword, setKeyword] = useState(null);
+  const [keyword, setKeyword] = useState(null)
 
   // REFS
-  const inputRef = useRef();
+  const inputRef = useRef()
 
   // HOOKS
   const { stack } = useStack({
     keyword,
-  });
+  })
 
   const handleSubmit = (evt) => {
-    evt.preventDefault();
-    setKeyword(evt.target.value);
-    inputRef.current.value = "";
-    handlerSumitFromParent(stack);
-  };
+    evt.preventDefault()
+    setKeyword(evt.target.value)
+    inputRef.current.value = ""
+    handlerSumitFromParent(stack)
+  }
 
   // HANDLES
   const handleChange = (evt) => {
-    inputRef.current.value = evt.target.value;
-    setKeyword(evt.target.value);
-  };
+    inputRef.current.value = evt.target.value
+    setKeyword(evt.target.value)
+  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -45,7 +45,7 @@ export default function Form({ onSubmit: handlerSumitFromParent }) {
         autoComplete="off"
       />
     </form>
-  );
+  )
 }
 
 //rfc
