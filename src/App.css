@@ -52,12 +52,10 @@ button:active {
 img.icon {
   width: fit-content;
   width: 69px;
-  height: 69px;
 }
 
 div.imgContainer {
   width: 100px;
-  height: 71px;
 }
 
 form {
