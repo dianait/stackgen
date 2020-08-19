@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1.3rem;
 }
 
 .App {
@@ -12,31 +13,20 @@
 
 h1 {
   font-family: "Staatliches", Verdana, Geneva, Tahoma, sans-serif;
-  letter-spacing: 7px;
+  letter-spacing: 12px;
+  font-size: 2rem;
 }
 
 .App-header {
   padding: 1rem 2rem 1.2rem 2rem;
-  border-bottom: 2px solid lightseagreen;
+  border-bottom: 1px solid lightseagreen;
+  box-shadow: 0 4px 15px rgba(86, 209, 231, 0.589);
 }
 
 input {
   padding: 0.6rem 1rem;
   margin: 1rem;
   border-radius: 15px;
-}
-
-section.stack {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 700px;
-  width: 540px;
-  min-width: 300px;
-  margin: 1rem auto;
-  padding: 1rem;
-  min-height: 135px;
-  border-radius: 10px;
 }
 
 h1 {
@@ -70,26 +60,6 @@ div.imgContainer {
   height: 71px;
 }
 
-footer {
-  /*   position: fixed;
-  bottom: 1rem; */
-  padding-top: 1rem;
-  padding-right: 1.5rem;
-  /*   border-top: 2px solid lightseagreen; */
-  width: 100%;
-}
-
-footer img {
-  width: 29px;
-  height: 29px;
-  padding: 0 0.3rem;
-  float: right;
-}
-
-form {
-  margin: 5rem 0;
-}
-
 button.imageStack {
   display: none;
   margin: 0 auto;
@@ -97,4 +67,10 @@ button.imageStack {
 
 a {
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 1rem;
+  }
 }

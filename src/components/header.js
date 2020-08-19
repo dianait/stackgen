@@ -5,11 +5,14 @@ export default function Header({ title }) {
     <header className="App-header">
       <div>
         <h1>
-          <a href="/">🧱</a> {title}
+          <a href="/">
+            <span role="img" aria-label="bricks">
+              🧱
+            </span>
+          </a>
+          {title}
         </h1>
       </div>
     </header>
   )
 }
-
-//rfc

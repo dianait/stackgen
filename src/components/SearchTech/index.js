@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react"
-import { useStack } from "../hooks/useStack"
+import { useStack } from "../../hooks/useStack"
 
-export default function Form({ onSubmit: handlerSumitFromParent }) {
+export default function SearchTech({ onSubmit: handlerSumitFromParent, nick }) {
   // STATES
   const [keyword, setKeyword] = useState(null)
 
@@ -26,10 +26,10 @@ export default function Form({ onSubmit: handlerSumitFromParent }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="generateHidden">
       <p className="onBoard">
         {" "}
-        👋 Busca tu primer icono
+        👋 Hi {nick}, Type your first techology...
         <br />
         <span style={{ fontSize: ".9rem", fontStyle: "italic" }}>
           js, ts, react, html, css, vue, nespresso, sass...

@@ -46,7 +46,6 @@ export const defaultStackSVG = [
   "xiaomi.svg",
   "jest.svg",
   "mocha.svg",
-  "c.svg",
   "csharp.svg",
   "c++.svg",
   "java.svg",
@@ -64,6 +63,15 @@ export const defaultStackSVG = [
   "aws.svg",
   "boostrap.svg",
   "archlinux.svg",
+  "android.svg",
+  "eclipse.svg",
+  "ios.svg",
+  "msi.svg",
+  "netbeans.svg",
+  "notion.svg",
+  "php.svg",
+  "phpstorm.svg",
+  "vsc.svg",
 ]
 
 // TODO: Iconos que se renderizan mál al pasar a Img

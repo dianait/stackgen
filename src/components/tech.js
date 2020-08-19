@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Tech({ id, tech }) {
+function Tech({ id, tech }) {
   return (
     <div className="imgContainer">
       <img
@@ -13,4 +13,6 @@ export default function Tech({ id, tech }) {
   )
 }
 
-//rfc
+export default React.memo(Tech)
+
+// rfc

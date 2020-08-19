@@ -1,38 +1,23 @@
 import React, { useState } from "react"
 import html2canvas from "html2canvas"
-import Modal from "./modal"
+import Modal from "./Modal"
 
 export default function ImageStack() {
-  const [modal, setModal] = useState("none")
-  const [message, setMessage] = useState()
+  const [isGenerated, setIsGenerated] = useState(false)
 
   const generateImageStack = () => {
-    setModal("block")
-
-    html2canvas(document.querySelector(".stack")).then((canvas) => {
-      // TODO: Cambiar usando useRef
+    setIsGenerated(true)
+    html2canvas(document.querySelector(".stackToImage")).then((canvas) => {
       const modalElement = document.getElementsByClassName("modal")[0]
       modalElement.append(canvas)
     })
 
-    // TODO: Cambiar usando useRef
-    const stackElement = document.getElementsByClassName("stack")[0]
-    stackElement.style.display = "none"
-    // TODO: Cambiar usando useRef
-    const buttonElement = document.getElementsByTagName("button")[0]
-    buttonElement.style.display = "none"
+    // TODO: Hacer esto con REFS
+    const element = document.getElementsByClassName("generateHidden")[0]
+    element.style.display = "none"
 
-    const onBardText = document.getElementsByClassName("onBoard")
-    for (let i = 0; i < onBardText.length; i++) {
-      onBardText[i].style.display = "none"
-    }
-
-    const resetButton = document.getElementsByClassName("imageStack")[0]
-    resetButton.style.display = "block"
-
-    setMessage(
-      "Ya tienes listo tu stack, ahora solo tienes que guardar esta imagen y listo 👇"
-    )
+    const stackClass = document.getElementsByClassName("stackClass")[0]
+    stackClass.style.display = "none"
   }
 
   const resetStackGen = () => {
@@ -41,13 +26,30 @@ export default function ImageStack() {
 
   return (
     <>
-      <span className="onBoard">...y cuando estés listo 👉 </span>
-      <button onClick={generateImageStack}>Generate!</button>
-      <p style={{ marginBottom: "2rem" }}>{message}</p>
-      <Modal show={modal} />
-      <button className="imageStack" onClick={resetStackGen}>
-        RESET
-      </button>
+      {isGenerated ? (
+        <>
+          <Modal />
+          <span>
+            ... Another one?
+            <span role="img" aria-label="see right">
+              👉
+            </span>
+          </span>
+          <button onClick={resetStackGen}>RESET</button>
+        </>
+      ) : (
+        <>
+          <section>
+            <span>
+              ... when you&apos;re done{" "}
+              <span role="img" aria-label="see right">
+                👉
+              </span>
+            </span>
+            <button onClick={generateImageStack}>Generate!</button>
+          </section>
+        </>
+      )}
     </>
   )
 }
