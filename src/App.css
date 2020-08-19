@@ -60,6 +60,10 @@ div.imgContainer {
   height: 71px;
 }
 
+form {
+  margin: 5rem 0 1rem 0;
+}
+
 button.imageStack {
   display: none;
   margin: 0 auto;
