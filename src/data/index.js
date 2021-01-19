@@ -27,6 +27,8 @@ export const defaultStackSVG = [
   "csharp.svg",
   "c++.svg",
   "java.svg",
+  "firebase.svg",
+  "ionic.svg",
   "meteor.svg",
   "caffescript.svg",
   "eslint.svg",
